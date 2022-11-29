@@ -1,3 +1,19 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 3px solid;
+}
+
+.container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  min-height: 90vh;
+}
+
+@media (min-height: 600px) {
+  
+}

@@ -1,3 +1,38 @@
 body {
-  background: blanchedalmond;
+  background: white;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 2cm;
 }
+.flex-container {
+  display: flex;
+  padding: 2rem;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 2cm;
+  
+}
+.container > div{
+  flex-grow: 1;
+  border: 1px solid gray;
+  background-color: papayawhip;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.b {
+  flex-grow: 5;
+  }
+
+@media (mid-width: 600px) {
+  .contatiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    div.a { 
+    flex: 1 1 100%;
+    }
+  }

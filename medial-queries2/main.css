@@ -1,3 +1,30 @@
 body {
   background: papayawhip;
 }
+* {
+  border: 3px solid black;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space between;
+  border-color: black;
+  background-color: lightsalmon;
+  font-size: 1cm;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  flex-grow: 3;
+  margin: .5cm;
+}
+
+@media (min-width: 600px) {
+   .container { 
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+}
